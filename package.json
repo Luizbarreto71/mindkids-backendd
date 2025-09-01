@@ -1,20 +1,25 @@
 {
-  "name": "ai-games-backend",
+  "name": "mindkids-backend",
   "version": "1.0.0",
-  "private": true,
-  "main": "src/server.js",
-  "type": "commonjs",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node server.js",
+    "vercel-build": "echo 'Skipping build for backend'"
   },
+  "keywords": [],
+  "author": "Luiz Barreto",
+  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "axios": "^1.10.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mercadopago": "^2.2.9",
-    "sqlite3": "^5.1.7"
+    "mercadopago": "^1.6.0",
+    "@supabase/supabase-js": "^2.43.4"
   }
 }
 
